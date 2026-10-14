@@ -1,0 +1,113 @@
+:root {
+    --page-background: #f1f3f4;
+    --board-background: #000000;
+
+    --green: #10a100;
+    --red: #ff0025;
+    --yellow: rgb(244, 254, 106);
+    --white: #ffffff;
+
+    --board-padding: 7px;
+    --panel-gap: 10px;
+    --board-width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    background: var(--page-background);
+}
+
+.board {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2.2fr 0.55fr;
+    grid-template-rows: 1.7fr 1fr 0.58fr;
+    grid-template-areas:
+        "yellow red red"
+        "white-top red red"
+        "blue white-bottom white-right";
+
+    width: min(100vw, var(--board-width));
+    aspect-ratio: 1.03;
+    gap: var(--panel-gap);
+    padding: var(--board-padding);
+
+    background: var(--board-background);
+}
+
+.panel {
+    min-width: 0;
+    min-height: 0;
+}
+
+.panel-yellow {
+    display: grid;
+    grid-area: yellow;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--panel-gap);
+}
+
+.panel-yellow span {
+    background: var(--yellow);
+}
+
+.panel-red {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-area: red;
+    padding: 14px;
+    background: var(--red);
+}
+
+.panel-red h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(14px, 2vw, 24px);
+    font-weight: 700;
+    text-align: left;
+}
+.panel-white-top {
+    grid-area: white-top;
+    background: var(--white);
+}
+
+.panel-blue {
+    display: grid;
+    grid-area: blue;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--panel-gap);
+}
+
+.panel-blue span {
+    background: var(--green);
+}
+
+.panel-white-bottom {
+    grid-area: white-bottom;
+    background: var(--white);
+}
+
+.panel-white-right {
+    grid-area: white-right;
+    background: var(--white);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --board-padding: 8px;
+        --panel-gap: 8px;
+    }
+}

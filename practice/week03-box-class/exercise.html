@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60231131</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main class="board" aria-label="색상 격자 디자인">
+        <div class="panel panel-yellow">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="panel panel-red">
+            <h1>60231131 김민철</h1>
+        </div>
+
+        <div class="panel panel-white-top"></div>
+
+        <div class="panel panel-blue">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="panel panel-white-bottom"></div>
+
+        <div class="panel panel-white-right"></div>
+    </main>
+
+    <script>
+        const tooltip = document.createElement("div");
+
+        tooltip.style.position = "fixed";
+        tooltip.style.display = "none";
+        tooltip.style.padding = "6px 10px";
+        tooltip.style.background = "#000000";
+        tooltip.style.color = "#ffffff";
+        tooltip.style.fontSize = "13px";
+        tooltip.style.borderRadius = "4px";
+        tooltip.style.pointerEvents = "none";
+        tooltip.style.zIndex = "9999";
+        tooltip.style.whiteSpace = "nowrap";
+
+        document.body.appendChild(tooltip);
+
+        const blocks = document.querySelectorAll(".panel, .panel span");
+
+        blocks.forEach((block) => {
+            block.addEventListener("mouseenter", () => {
+                const width = Math.round(block.getBoundingClientRect().width);
+                const height = Math.round(block.getBoundingClientRect().height);
+
+                tooltip.textContent = `너비: ${width}px / 높이: ${height}px`;
+                tooltip.style.display = "block";
+            });
+
+            block.addEventListener("mousemove", (event) => {
+                tooltip.style.left = `${event.clientX + 12}px`;
+                tooltip.style.top = `${event.clientY + 12}px`;
+            });
+
+            block.addEventListener("mouseleave", () => {
+                tooltip.style.display = "none";
+            });
+        });
+    </script>
+</body>
+</html>

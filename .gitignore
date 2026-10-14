@@ -1,0 +1,27 @@
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+.cache/
+
+# ---- 환경 변수 ----
+.env
+.env.local
+
+# ---- 에디터 ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- OS ----
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+.DS_Store
+~$*
+
+# ---- 디자인 툴 임시 파일 ----
+*.psd.tmp
+*.ai.bak

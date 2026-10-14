@@ -6,9 +6,9 @@
 
 | 과제 | 내용 | 발표 |
 | --- | --- | --- |
-| [중간 과제](assignments/midterm/) | 이창동 감독의 영화 〈박하사탕〉(2000) 메인 포스터를 가로형 웹 포스터로 옮긴다 | 9주차 |
+| [중간 과제](assignments/midterm/) | 이창동 감독의 영화 〈박하사탕〉포스터를 가로형 웹 포스터로 옮기기
 
-원본 포스터 이미지는 [`assignments/midterm/research/peppermint-candy/`](assignments/midterm/research/peppermint-candy/)에 있다.
+원본 포스터 이미지는 [`assignments/midterm/research/peppermint-candy/`](assignments/midterm/research/peppermint-candy/)
 
 ## 주차별 실습
 
@@ -20,17 +20,17 @@
 | 4주차 | 타이포그래피와 모션 | [week04-typography-motion](practice/week04-typography-motion/) |
 | 7주차 | 마우스 이벤트 | [week07-mouseevent](practice/week07-mouseevent/) · [페이지](https://dasvie.github.io/WebProgramming/practice/week07-mouseevent/) |
 
-## 수업 규칙
+## 규칙
 
-- 중간 과제 발표(9주차)까지 AI 사용은 금지된다.
-- 중간 과제는 수업에서 배운 HTML, CSS, jQuery로 직접 작성한다.
-- 과제와 실습은 GitHub Pages(main 브랜치) 링크로 제출한다.
+- 중간과제는 AI를 코드작성에 사용하지 않고, 직접 이해하고 작성하는 것에 초점을 맞추기 
+- HTML, CSS, jQuery로 직접 작성하기
+- 과제와 실습은 GitHub Pages(main 브랜치) 링크로 제출하기
 
 ## 작성 규칙
 
-- 웹 페이지 폴더는 `index.html`을 기준으로 `style/`, `js/`, 이미지 폴더를 둔다.
-- 폴더와 파일 이름은 영문 소문자와 하이픈만 쓴다.
-- 경로는 `index.html`이 있는 폴더를 기준으로 쓰고, 맨 앞에 `/`를 붙이지 않는다.
+- 웹 페이지 폴더는 `index.html`을 기준으로 `style/`, `js/`, 이미지 폴더를 둘 것
+- 폴더와 파일 이름은 영문 소문자와 하이픈만 써야 함
+- 경로는 `index.html`이 있는 폴더를 기준으로 쓰고, 맨 앞에 `/`를 붙이지 않아야 함 (경로 지정에 늘 신경쓰기)
 
 ## 폴더 구조
 

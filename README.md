@@ -6,7 +6,7 @@
 
 | 과제 | 내용 | 발표 |
 | --- | --- | --- |
-| [중간 과제](assignments/midterm/) | 이창동 감독의 영화 〈박하사탕〉포스터를 가로형 웹 포스터로 옮기기
+| [중간 과제](assignments/60231131%20mid/) | 이창동 감독의 영화 〈박하사탕〉포스터를 가로형 웹 포스터로 옮기기 | [페이지](https://dasvie.github.io/WebProgramming/assignments/60231131%20mid/) |
 
 원본 포스터 이미지는 [`assignments/midterm/research/peppermint-candy/`](assignments/midterm/research/peppermint-candy/)
 
@@ -35,7 +35,7 @@
 ## 폴더 구조
 
 ```
-assignments/midterm/   중간 과제
+assignments/60231131 mid/   중간 과제 (박하사탕 웹 포스터)
 practice/              주차별 수업 실습
 practice/docs/         강의계획서, 1주차 OT 자료
 ```

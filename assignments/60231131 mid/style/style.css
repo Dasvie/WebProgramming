@@ -1,0 +1,703 @@
+/* 폰트 무조건 위에 */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&family=Gowun+Batang&family=Hahmlet:wght@400;700&family=Nanum+Pen+Script&family=Jost:wght@400;500&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+ 
+body {
+background-color: #212022;
+color: #212022;
+font-family: "Gowun Batang", serif;
+}
+ 
+/* 노트북 화면 맞춰서 재확인 */
+.poster {
+width: 100%;
+height: 865px;
+position: relative;
+background-color: #212022;
+}
+
+.bg-img {
+display: block;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/* 처음엔 투명, 1979에서 3초 나타나게   */
+.bw {
+opacity: 0;
+transition-property: opacity;
+transition-duration: 3s;
+}
+
+.memory {
+width: 575px;
+height: 630px;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.sea-img {
+width: 575px;
+height: 630px;
+object-position: 50% 50%;
+}
+
+.bicycle-img {
+display: block;
+width: 340px;
+height: 310px;
+object-fit: contain;
+object-position: 100% 100%;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.num {
+position: absolute;
+left: 55px;
+color: #f4f5f2;
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 300;
+font-size: 140px;
+line-height: 1;
+filter: drop-shadow(0 2px 6px #3a3a3a);
+}
+
+.tagline {
+position: absolute;
+top: 50px;
+left: 60px;
+color: #f4f5f2;
+font-family: "Nanum Pen Script", cursive;
+font-size: 24px;
+letter-spacing: 1px;
+filter: drop-shadow(0 2px 6px #3a3a3a);
+}
+
+.year {
+top: 95px;
+transition-property: opacity;
+transition-duration: 0.5s;
+}
+.year-1979 {
+opacity: 0;
+}
+.date {
+top: 225px;
+}
+
+/* 대사 */
+.copy {
+position: absolute;
+top: 580px;
+left: 60px;
+color: #f4f5f2;
+font-size: 30px;
+line-height: 1.2;
+}
+
+
+.en {
+position: absolute;
+left: 60px;
+color: #38bca2;
+font-family: "Jost", sans-serif;
+font-weight: 500;
+font-size: 60px;
+line-height: 1;
+}
+
+.en-1 {
+top: 435px;
+}
+.en-2 {
+top: 495px;
+}
+
+.title-box {
+width: 160px;
+height: 630px;
+position: absolute;
+top: 0;
+left: 575px;
+background-color: #f4f5f2;
+text-align: center;
+}
+
+/* 세로 제목 <bㄱ/> */
+.title {
+width: 160px;
+position: absolute;
+top: 50px;
+left: 0;
+color: #38bca2;
+font-family: "Hahmlet", serif;
+font-weight: 400;
+font-size: 85px;
+line-height: 1.2;
+}
+
+/* 박하사탕 multiply */
+.candy-img {
+display: block;
+width: 110px;
+height: 110px;
+position: absolute;
+top: 490px;
+left: 25px;
+opacity: 0;
+mix-blend-mode: multiply;
+}
+
+.rails {
+height: 630px;
+position: absolute;
+top: 0;
+left: 735px;
+right: 0;
+}
+
+.rails-img {
+width: 100%;
+height: 630px;
+object-position: 0% 40%;
+}
+
+.man {
+position: absolute;
+top: 285px;
+left: 730px;
+}
+
+.man-img {
+display: block;
+height: 345px;
+filter: drop-shadow(0 9px 9px #3a3a3a);
+}
+
+.man .bw {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/* 대사도 2000에서 반응없어야함 */
+.speech {
+width: 275px;
+position: absolute;
+top: -20%;
+left: 60%;
+color: white;
+font-family: "Hahmlet", serif;
+font-weight: 700;
+font-size: 35px;
+line-height: 1.2;
+opacity: 0;
+pointer-events: none;
+transition-property: opacity;
+transition-duration: 0.5s;
+}
+
+/* hover 한번더 확인 */
+.man:hover .speech {
+opacity: 1;
+}
+
+.ground {
+width: 100%;
+height: 235px;
+position: absolute;
+top: 630px;
+left: 0;
+background-color: #f4f5f2;
+}
+
+.clouds-img {
+width: 100%;
+height: 235px;
+object-position: 50% 50%;
+opacity: 0.4;
+mix-blend-mode: multiply;
+}
+
+.rail {
+width: 1380px;
+height: 9px;
+position: absolute;
+top: 45px;
+left: 80px;
+border-top: 2px solid #212022;
+border-bottom: 2px solid #212022;
+}
+
+.track {
+display: block;
+width: 1460px;
+height: 20px;
+position: absolute;
+top: 40px;
+left: 0;
+}
+
+/* 기차레일 stroke-dasharray*/
+.sleeper {
+stroke: #5d6367;
+stroke-width: 13px;
+stroke-dasharray: 3 12;
+animation-name: flow;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+.track-line {
+stroke: #38bca2;
+stroke-width: 5px;
+stroke-dasharray: 1244;
+stroke-dashoffset: 1244;
+}
+
+.station {
+width: 185px;
+height: 80px;
+position: absolute;
+top: 0;
+text-align: center;
+}
+
+/* 역 간격 위치 210 일정하게 */
+.station-1 {
+  left: 1306px;
+}
+.station-2 {
+  left: 1096px;
+}
+.station-3 {
+  left: 886px;
+}
+.station-4 {
+  left: 676px;
+}
+.station-5 {
+  left: 466px;
+}
+.station-6 {
+  left: 256px;
+}
+.station-7 {
+  left: 46px;
+}
+
+.label {
+padding-top: 10px;
+color: #5d6367;
+font-family: "Pretendard", sans-serif;
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 1.2;
+transition-property: color;
+transition-duration: 1s;
+}
+
+.label b {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 500;
+font-size: 14px;
+}
+
+.tick {
+width: 5px;
+height: 20px;
+position: absolute;
+top: 40px;
+left: 90px;
+background-color: #212022;
+}
+
+/* 기차: left 16, bob */
+.train-img {
+display: block;
+width: 96px;
+position: absolute;
+top: 35px;
+left: 1367px;
+transition-property: left;
+transition-duration: 16s;
+transition-timing-function: linear;
+animation-name: bob;
+animation-duration: 0.5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+ 
+.billing {
+width: 1382px;
+position: absolute;
+top: 95px;
+left: 80px;
+color: #3d4449;
+letter-spacing: 1px;
+}
+
+.billing-1 {
+font-family: "Pretendard", sans-serif;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.5;
+}
+
+.billing-2 {
+margin-top: 10px;
+font-family: "Pretendard", sans-serif;
+font-size: 17px;
+line-height: 1.5;
+}
+
+.credit {
+margin-right: 20px;
+}
+
+/* 재생 그냥 ㅇ로른쪽에 고정 */
+.button-play {
+display: block;
+width: 80px;
+height: 80px;
+position: fixed;
+top: 24px;
+right: 32px;
+z-index: 10;
+cursor: pointer;
+filter: drop-shadow(0 0 6px #38bca2);
+}
+.button-play:active {
+transform: scale(0.95);
+}
+
+.play-img {
+display: block;
+width: 80px;
+height: 80px;
+position: absolute;
+top: 0;
+left: 0;
+transition-property: opacity;
+transition-duration: 0.5s;
+}
+
+.icon-return {
+opacity: 0;
+}
+
+/* 재생 버튼을 누르면 body에 붙는다 */
+.past .bw {
+opacity: 1;
+}
+
+/* 흑백 사진에 마우스를 올리면 컬러가 보인다 */
+.past .bw:hover {
+opacity: 0;
+transition-duration: 0.5s;
+}
+.past .title-box {
+cursor: pointer;
+}
+
+/* 사탕16초 동안 커지고*/
+.past .candy-img {
+opacity: 1;
+animation-name: grow;
+animation-duration: 16s;
+animation-timing-function: linear;
+}
+
+/* 눌렀을 때 반응*/
+.past .plain .candy-img {
+opacity: 0;
+}
+
+
+/* 포스터 흔들림 (출발-도착) */
+.past .poster {
+animation-name: rattle;
+animation-duration: 16.5s;
+animation-timing-function: linear;
+}
+
+.past .station-7 .tick {
+animation-name: signal;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 8;
+}
+
+.past .year {
+transition-delay: 16s;
+}
+.past .year-2000 {
+opacity: 0;
+}
+.past .year-1979 {
+opacity: 1;
+}
+
+.past .track-line {
+animation-name: draw;
+animation-duration: 16s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+.past .sleeper {
+animation-direction: reverse;
+}
+
+
+/* 기차 목적지: 1979 역 */
+.past .train-img {
+left: 125px;
+}
+
+.past .station-7 .label {
+color: #212022;
+transition-delay: 16s;
+}
+
+.past .icon-play {
+opacity: 0;
+}
+.past .icon-return {
+opacity: 1;
+}
+
+/*  키프레임 적용 흔들리는거부터 */
+@keyframes bob {
+0% {
+top: 35px;
+}
+100% {
+top: 30px;
+}
+}
+
+/* 기차길 흐름 */
+@keyframes flow {
+0% {
+stroke-dashoffset: 15;
+}
+100% {
+stroke-dashoffset: 0;
+}
+}
+
+@keyframes draw {
+0% {
+stroke-dashoffset: 1244;
+}
+100% {
+stroke-dashoffset: 0;
+}
+}
+
+/* 사탕 */
+@keyframes grow {
+0% {
+transform: scale(0);
+}
+100% {
+transform: scale(1);
+}
+}
+
+
+/* 포스터 흔들림 시작이랑 끝 */
+@keyframes rattle {
+0% {
+transform: translateX(0);
+}
+1% {
+transform: translateX(-4px);
+}
+2% {
+transform: translateX(4px);
+}
+3% {
+transform: translateX(0);
+}
+97% {
+transform: translateX(0);
+}
+98% {
+transform: translateX(-4px);
+}
+99% {
+transform: translateX(4px);
+}
+100% {
+transform: translateX(0);
+}
+}
+
+
+/* 눈금  */
+@keyframes signal {
+0% {
+background-color: #212022;
+transform: scale(1);
+}
+50% {
+background-color: #38bca2;
+transform: scale(1.6);
+}
+100% {
+background-color: #212022;
+transform: scale(1);
+}
+}
+
+/* 크레딧 */
+.credits {
+position: relative;
+padding: 123px 154px;
+background-color: #f4f5f2;
+}
+
+.credits-ko {
+color: #38bca2;
+font-family: "Hahmlet", serif;
+font-size: 92px;
+line-height: 1.2;
+}
+
+.credits-sub {
+margin-top: 15px;
+font-family: "Hahmlet", serif;
+font-size: 20px;
+}
+
+/* 폴라로이드 기울기 까지 적용하기 */
+.polaroid {
+width: 330px;
+position: absolute;
+padding: 7.5px;
+background-color: white;
+filter: drop-shadow(0 10px 12px #c9ccc9);
+}
+
+
+.polaroid-1 {
+top: 360px;
+left: 760px;
+transform: rotate(-2deg);
+}
+.polaroid-2 {
+top: 380px;
+left: 1110px;
+transform: rotate(1.5deg);
+}
+.polaroid-3 {
+top: 630px;
+left: 935px;
+transform: rotate(-1deg);
+}
+
+.tape {
+display: block;
+width: 80px;
+height: 24px;
+position: absolute;
+top: -10px;
+left: 125px;
+background-color: #38bca2;
+opacity: 0.7;
+transform: rotate(4deg);
+}
+
+.album-img {
+display: block;
+width: 315px;
+height: 210px;
+object-fit: cover;
+}
+
+
+/* 크레딧 */ 
+.credits-list {
+width: 540px;
+margin-top: 45px;
+border-top: 2px solid #212022;
+}
+
+.credits-list li {
+padding: 15px 0;
+border-bottom: 2px solid #d6d9d7;
+font-family: "Hahmlet", serif;
+font-size: 30px;
+}
+
+.last {
+background-color: #38bca2;
+}
+
+.list-year {
+display: inline-block;
+width: 154px;
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 500;
+}
+
+
+/* 줄거리 버튼 */
+.button-synopsis {
+margin-top: 40px;
+padding: 8px 25px;
+border: 2px solid #38bca2;
+border-radius: 30px;
+color: #3d4449;
+font-family: "Pretendard", sans-serif;
+font-size: 18px;
+transition-property: background-color;
+transition-duration: 0.5s;
+}
+
+.button-synopsis:hover {
+background-color: #38bca2;
+}
+
+.synopsis {
+display: none;
+margin-top: 25px;
+color: #3d4449;
+font-size: 25px;
+line-height: 2;
+letter-spacing: 1px;
+word-break: keep-all;
+}
+
+
+.staff {
+margin-top: 90px;
+padding-top: 20px;
+border-top: 2px solid #d6d9d7;
+color: #7c8387;
+font-family: "Pretendard", sans-serif;
+font-size: 13.5px;
+line-height: 1.8;
+letter-spacing: 1px;
+word-break: keep-all;
+}
+
+.site {
+margin-top: 25px;
+text-align: right;
+color: #3d4449;
+font-family: "Jost", sans-serif;
+font-size: 25px;
+}
+
+.open {
+display: block;
+}

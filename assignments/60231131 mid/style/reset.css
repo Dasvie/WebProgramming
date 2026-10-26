@@ -1,0 +1,30 @@
+ /* 여백관리 */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+body {
+line-height: 1;
+}
+ 
+p {
+line-height: 1.7em;
+}
+ 
+ol {
+list-style: none;
+}
+ 
+img {
+display: block;
+max-width: 100%;
+}
+ 
+button {
+border: 0;
+background: none;
+font: inherit;
+cursor: pointer;
+}

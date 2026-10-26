@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>박하사탕 Peppermint Candy</title>
+<link rel="stylesheet" href="./style/reset.css" />
+<link rel="stylesheet" href="./style/style.css" />
+<!-- jQuery 다음에 내 스크립트 확인 -->
+<script
+src="https://code.jquery.com/jquery-4.0.0.min.js"
+integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+crossorigin="anonymous"
+></script>
+<script src="./js/script.js" defer></script>
+</head>
+<body>
+
+<!-- 메인엔 이미지 두장 겹쳐서 -->
+<div class="button-play">
+<img
+class="play-img icon-play"
+src="./img/button-play.png"
+alt="재생 버튼"
+/>
+
+<img
+class="play-img icon-return"
+src="./img/button-replay.png"
+alt="돌아가기 버튼"
+/>
+
+</div>
+
+<audio 
+id="trainSound" 
+src="./sound/train.mp3" 
+preload="auto"></audio>
+
+<!-- 상단 포스터 -->
+<div class="poster">
+<div class="memory">
+<img
+class="bg-img sea-img"
+src="./img/sea-color.jpg"
+alt="노을 지는 바다와 물가의 수풀"
+/>
+
+<img 
+class="bg-img sea-img bw" 
+src="./img/sea-bw.jpg" 
+alt="" />
+
+<img
+class="bicycle-img"
+src="./img/bicycle.png"
+alt="바닷가에 세워 둔 자전거"
+/>
+
+<img class="bicycle-img bw" src="./img/bicycle-bw.png" alt="" />
+<p class="tagline">우리시대 최고의 영화... 자신있습니다.</p>
+<p class="num year year-2000">2000</p>
+<p class="num year year-1979">1979</p>
+<p class="num date">0101</p>
+<p class="en en-1">peppermint</p>
+<p class="en en-2">candy</p>
+<p class="copy">다시 시작하고 싶다!</p>
+</div>
+
+<!-- 세로제목 -->
+<div class="title-box">
+<h1 class="title">박<br />하<br />사<br />탕</h1>
+<img class="candy-img" src="./img/candy.png" alt="박하사탕" />
+</div>
+
+<!-- 우측 레일 -->
+<div class="rails">
+<img
+class="bg-img rails-img"
+src="./img/rails-color.jpg"
+alt="충북선 철교와 멀리 보이는 터널"
+/>
+<img 
+class="bg-img rails-img bw" 
+src="./img/rails-bw.jpg" 
+alt="" />
+</div>
+
+<!-- 영호 명대사 호버 반영해야함 -->
+<div class="man">
+<img
+class="man-img"
+src="./img/man-color.png"
+alt="철교 위에서 두 팔을 벌리고 외치는 김영호"
+/>
+
+<img class="man-img bw" src="./img/man-bw.png" alt="" />
+<p class="speech">나 다시 돌아갈래!</p>
+</div>
+
+<!-- 하단 서브 타이틀~~ -->
+<div class="ground">
+<img class="bg-img clouds-img" src="./img/clouds.jpg" alt="" />
+<svg class="track" viewBox="0 0 1460 20">
+<path class="sleeper" d="M77 10 L1459 10" />
+<path class="track-line" d="M1390 10 L146 10" />
+</svg>
+<div class="rail"></div>
+<ol>
+
+<li class="station station-1">
+<p class="label"><b>1999</b> 야유회</p>
+<span class="tick"></span>
+</li>
+
+<li class="station station-2">
+<p class="label"><b>1999</b> 사진기</p>
+<span class="tick"></span>
+</li>
+
+<li class="station station-3">
+<p class="label"><b>1994</b> 삶은 아름답다</p>
+<span class="tick"></span>
+</li>
+
+<li class="station station-4">
+<p class="label"><b>1987</b> 고백</p>
+<span class="tick"></span>
+</li>
+
+<li class="station station-5">
+<p class="label"><b>1984</b> 기도</p>
+<span class="tick"></span>
+</li>
+
+<li class="station station-6">
+<p class="label"><b>1980</b> 면회</p>
+<span class="tick"></span>
+</li>
+
+<li class="station station-7">
+<p class="label"><b>1979</b> 소풍</p>
+<span class="tick"></span>
+</li>
+</ol>
+
+<img 
+class="train-img" 
+src="./img/train.svg" 
+alt="기차" />
+ 
+<div class="billing">
+<p class="billing-1">
+<span class="credit">명계남 > 기획 . 제작</span
+><span class="credit">이창동 > 각본 . 감독</span>
+</p>
+<p class="billing-2">
+<span class="credit">설경구 . 문소리 . 김여진</span
+><span class="credit">제작 > 이스트필름</span
+><span class="credit">공동제작 > NHK</span
+><span class="credit">제공 > 유니코리아 . 드림 벤처 캐피탈</span
+><span class="credit">배급 > 신도필름</span>
+</p>
+</div>
+</div>
+</div>
+
+<!-- 포스터 하단 -->
+<div class="credits">
+<p class="credits-ko">박하사탕 (2000)</p>
+<p class="credits-sub">이창동 감독의 두번째 작품</p>
+<div class="polaroid polaroid-1">
+<span class="tape"></span>
+
+<img
+class="album-img"
+src="./img/album-picnic.jpg"
+alt="1979 소풍"
+/>
+</div>
+
+<div class="polaroid polaroid-2">
+<span class="tape"></span>
+<img
+class="album-img"
+src="./img/album-home.jpg"
+alt="일상"
+/>
+</div>
+
+<div class="polaroid polaroid-3">
+<span class="tape"></span>
+<img
+class="album-img"
+src="./img/album-bicycle.jpg"
+alt="제일 흐뭇해지는 장면"
+/>
+</div>
+
+<ol class="credits-list">
+<li><span class="list-year">1999</span>야유회</li>
+<li><span class="list-year">1999</span>사진기</li>
+<li><span class="list-year">1994</span>삶은 아름답다</li>
+<li><span class="list-year">1987</span>고백</li>
+<li><span class="list-year">1984</span>기도</li>
+<li><span class="list-year">1980</span>면회</li>
+<li class="last"><span class="list-year">1979</span>소풍</li>
+</ol>
+
+<button class="button-synopsis">줄거리 보기 ▾</button>
+<p class="synopsis">
+1999년 봄, 마흔 살 영호는 ‘가리봉 봉우회’ 야유회에 허름한 행색으로
+나타난다.<br />
+그곳은 20년 전 첫사랑 순임과 소풍을 왔던 곳.<br />
+직업도 가족도 모두 잃고, 삶의 막장에 다다른 영호는 철로 위에서 “나 다시
+돌아갈래” 라고 절규한다.<br />
+영호의 절규는 기차의 기적소리를 뚫고, 시간을 거슬러 올라간다.<br />
+사흘 전 봄, 94년 여름, 87년 봄, 84년 가을, 80년 5월 그리고 마지막 79년
+가을.<br />
+마침내, 영호는 스무 살 첫사랑 순임을 만난다.
+</p>
+
+<div class="staff">
+<p>
+제작 명계남, 마코토 우에다. 제작지원 최인기. 프로듀서 전재영,
+전양준, 케이코 이노. 시나리오 이창동. 촬영감독 김형구. 조명감독
+이강산. 편집 김현. 동시녹음 이승철. 미술 박일현. 음악 이재진.
+분장 황현규. 의상 차선영. 소품 최승영. 세트 오상만. 특수효과
+정도안. 사진 한미진. 현상 윤종두 . 녹음 라이브톤 . 조감독 김현진,
+김영. 제작부장 김성진. 제작지휘 조민철. 홍보 임상희, 김수림.
+광고디자인 김혜진. 광고사진 김우영. 예고편 MIC
+</p>
+<p class="site">
+www.peppermintcandy.co.kr
+</p>
+</div>
+</div>
+</body>
+</html>
